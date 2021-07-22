@@ -14,9 +14,9 @@ test accuracy is 96% and 88%, respectively.
 1. Edited the . csv files to have each element in the list contain ["pokemon name", {1/0}], 1/0 based on if grass type or not, rather than ["pokemon name", "type"]
 
 2. Created a script that took the images in the train/test datasets and combined them into a (120 * 120 * 3, m) numpy aray, with each image as a column vector,
-ordered by their relative place in the .csv file containing information regarding whether or not the Pokemon is a grass type. Each array was saved as a .npy file
+ordered by their relative place in the .csv file containing information regarding whether or not the Pokemon is a grass type. Each array was saved as a .npy file (X)
 
-3. Created a script that converted the .csv files into a 1xm numpy array, made of only 1s and 0s. Each array was saved as a .npy file
+3. Created a script that converted the .csv files into a 1xm numpy array, made of only 1s and 0s. Each array was saved as a .npy file (Y)
 
 4. Wrote the architecture of the NN by writing each function before calling model()
     - Initialized parameters w, b, an [nx x 1] column vector and real number respectively, with zeros. <em>note nx = (120 * 120 * 3 for this dataset)</em>
