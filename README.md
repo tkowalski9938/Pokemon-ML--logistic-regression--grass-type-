@@ -42,7 +42,7 @@ ordered by their relative place in the .csv file containing information regardin
 
 
 ## Learning Rate
-
+<img width="460" alt="Capture" src="https://user-images.githubusercontent.com/83722101/126698658-f5d68fd7-4e11-4a2c-b530-a8adfd007a25.PNG">
 
 ## Acknowledgements
 The dataset used was scrapped by Vishal Subbiah, <a target="_blank" href="https://www.kaggle.com/vishalsubbiah/pokemon-images-and-types?select=images">found here</a>
