@@ -30,8 +30,8 @@ ordered by their relative place in the .csv file containing information regardin
       by taking dz = A-Y *(that is what the partial derivative equals to)*
       - Made a nx x 1 column vector dw, containing the sum of all <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial J}{\partial w}">, by taking
       (1/m) * X dot dz.T *(note the partial derivative calculation is correct because for each <img src="https://render.githubusercontent.com/render/math?math=w^{(i)}">,
-        <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial L}{\partial z^{(m)}} \frac{\partial z^{(m)}}{\partial w^{(i)}} = \frac{\partial L}{\partial w^{(i)}}">, <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial z^{(m)}}{\partial w^{(i)}} = X^{(i)}_{m}">
-        and cost is the average of the losses
+        <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial L}{\partial z} \frac{\partial z}{\partial w^{(i)}} = \frac{\partial L}{\partial w^{(i)}}">, <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial z}{\partial w^{(i)}} = X^{(i)}">
+        and cost is the average of the losses*
       - Calculated db as (1/m) * the sum of dz, since b is a constant, so <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial L}{\partial b} = \frac{\partial L}{\partial z} \frac{\partial z}{\partial b} = \frac{\partial L}{\partial z}">
     - Optimization
       - Implemented gradient descent on parameters w and b *(note all w1 through wnx are subtracted/added at the same time due to vectorization)*
