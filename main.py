@@ -3,10 +3,10 @@ import copy
 import matplotlib.pyplot as plt
 import cv2
 
-X_train = np.load("X_train_preprocessed.npy")
-X_test = np.load("X_test_preprocessed.npy")
-Y_train = np.load("Y_train.npy")
-Y_test = np.load("Y_test.npy")
+X_train = np.load("./data/train_set/vectorized/X_train_preprocessed.npy")
+X_test = np.load("./data/test_set/vectorized/X_test_preprocessed.npy")
+Y_train = np.load("./data/train_set/vectorized/Y_train.npy")
+Y_test = np.load("./data/test_set/vectorized/Y_test.npy")
 
 def sigmoid(z):
     z = np.clip(z, -500, 500 )

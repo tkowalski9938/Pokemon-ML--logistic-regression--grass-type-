@@ -1,7 +1,9 @@
-import csv
-import numpy as np
-from numpy import save
-import cv2
+# import csv
+# import numpy as np
+# from numpy import save
+# import cv2
+
+#if using, make sure to change the paths to the respective .csv files
 
 # with open('Y_train.csv', newline='') as f:
 #     reader = csv.reader(f)
@@ -64,21 +66,21 @@ import cv2
 
 
 
-with open("Y_train.csv", newline='') as f:
-    reader = csv.reader(f)
-    data = list(reader)
+# with open("Y_train.csv", newline='') as f:
+#     reader = csv.reader(f)
+#     data = list(reader)
 
-print(len(data))
-print(data[0])
-X_train = []
-for k in range(len(data)):
-    image = cv2.imread("./datasets/train_set/" + data[k][0] + ".png")
-    X_train.append(image)
+# print(len(data))
+# print(data[0])
+# X_train = []
+# for k in range(len(data)):
+#     image = cv2.imread("./datasets/train_set/" + data[k][0] + ".png")
+#     X_train.append(image)
 
-X_train = np.array(X_train)
-print(X_train.shape)
-X_train = X_train.reshape(759, -1).T
-print(X_train.shape)
-X_train = X_train.astype("float64")
-X_train = X_train / 255
-save("X_train_preprocessed.npy", X_train)
+# X_train = np.array(X_train)
+# print(X_train.shape)
+# X_train = X_train.reshape(759, -1).T
+# print(X_train.shape)
+# X_train = X_train.astype("float64")
+# X_train = X_train / 255
+# save("X_train_preprocessed.npy", X_train)
