@@ -22,7 +22,7 @@ ordered by their relative place in the .csv file containing information regardin
     - Initialized parameters w, b, an [nx x 1] column vector and real number respectively, with zeros. <em>note nx = (120 * 120 * 3 for this dataset)</em>
     - Forward Propagation
       - Made a row vector A (1xm) of the activations of the entire set, by Z =  w.T dot X + b and A = sigmoid(Z) *note b is broadcasted*
-      - Used cost = <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{m}(\sum_{i=1}^{m} -(y^{(i)}ln(a^{(i)} + (1-y^{(i)})ln(1-a^{(i)})))">,
+      - Used cost =![CodeCogsEqn](https://user-images.githubusercontent.com/83722101/126808177-b7918d81-6e5b-44e7-84f3-a3a12fc2074d.gif),
     vectorized by taking the sum of (ln(a) dot Y.T) + (ln(1-a) dot (1-Y).T) <em>note Y is a 1xm row vector of correct grass-type predictions, and that the sum of 
     dot products works because of the piecewise nature of elements of Y being 1 or 0</em>
     - Backward Propagation
