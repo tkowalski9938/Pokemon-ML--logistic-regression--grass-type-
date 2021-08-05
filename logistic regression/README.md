@@ -1,7 +1,6 @@
-# Pokemon ML Algorithm, Grass Type or Not 
+# Pokemon ML Algorithm, Grass Type or Not (LR)
 This project implements a simple, one-layer neural network (logistic regression) on a dataset of 809 images of gen 1-7 Pokemon, learning if images of Pokemon are
-grass type or not (1 or 0, respectively). The neural network is completely vectorized. With the number of iterations of forward & backward propagation being 5,000 and a learning rate of 0.001, train and
-test accuracy is 96% and 88%, respectively.
+grass type or not (1 or 0, respectively). I focused on vectorization in this project, ensuring that the entire training set was processed per iteration.
 
 ## Implementation
 ### Technologies
