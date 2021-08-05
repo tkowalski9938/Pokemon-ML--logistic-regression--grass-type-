@@ -38,9 +38,6 @@ ordered by their relative place in the .csv file containing information regardin
 5. Created model() by adding the functions listed above
 6. Adjusted original learning rate used (0.25) to 0.001 so the learning curve would be more smooth
 
-## Accuracy after 5000 iterations
-<img width="243" alt="Capture" src="https://user-images.githubusercontent.com/83722101/126699100-6d4bf3e9-b74a-413f-a061-6e1ddc4bf8dc.PNG">
-
 ## Learning Rate
 <img width="460" alt="Capture" src="https://user-images.githubusercontent.com/83722101/126698658-f5d68fd7-4e11-4a2c-b530-a8adfd007a25.PNG">
 
